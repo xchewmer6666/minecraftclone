@@ -27,7 +27,7 @@ const TextureSelector = () => {
     log,
   };
   useEffect(() => {
-    const pressedTexture = Object.entries(textures).find(([k, v]: any) => v);
+    const pressedTexture = Object.entries(textures).find(([, v]: any) => v);
     if (pressedTexture) {
       console.log("pressed:", pressedTexture);
       setTexture(pressedTexture[0]);

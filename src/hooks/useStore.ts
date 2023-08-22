@@ -26,7 +26,7 @@ export const useStore = create((set) => ({
     set((prev: any) => ({
       cubes: prev.cubes.filter((cube: any) => {
         const [X, Y, Z] = cube.pos;
-        return X !== x || Y !== y || Z !== Z;
+        return X !== x || Y !== y || Z !== z;
       }),
     }));
   },
